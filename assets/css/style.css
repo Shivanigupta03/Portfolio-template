@@ -431,21 +431,73 @@ section { padding: 48px 0; }
 .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ---------------------------------------------------------------------
-   RESEARCH GRID (2-column cards: icon + title, description, tags, link)
+   RESEARCH TIMELINE (center line; cards alternate left / right, each one
+   a step lower than the last; icon + title, description, tags, link)
    --------------------------------------------------------------------- */
 .research-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 8px 0;
 }
 
-@media (max-width: 800px) { .research-grid { grid-template-columns: 1fr; } }
+/* the vertical line */
+.research-grid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  margin-left: -1.5px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  border-radius: 2px;
+}
+
+.research-card { position: relative; width: calc(50% - 40px); overflow: visible; transition: transform 0.2s, background 0.2s; }
+.research-card:hover { transform: translateY(-4px); background-color: var(--card-bg-hover); }
+.research-card:nth-child(odd)  { align-self: flex-start; }
+.research-card:nth-child(even) { align-self: flex-end; }
+
+/* dot on the line + small connector to the card */
+.research-card::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  border: 3px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--accent-2);
+}
+.research-card:nth-child(odd)::before  { right: -48px; }
+.research-card:nth-child(even)::before { left: -48px; }
+
+.research-card::after {
+  content: "";
+  position: absolute;
+  top: 39px;
+  width: 32px;
+  height: 2px;
+  background: var(--accent-2);
+}
+.research-card:nth-child(odd)::after  { right: -32px; }
+.research-card:nth-child(even)::after { left: -32px; }
+
+@media (max-width: 800px) {
+  .research-grid::before { left: 12px; margin-left: 0; }
+  .research-card { width: calc(100% - 44px); align-self: flex-end !important; }
+  .research-card::before { left: -40px !important; right: auto !important; }
+  .research-card::after  { left: -24px !important; right: auto !important; width: 24px; }
+}
 
 .research-card {
-  background: var(--card-bg);
+  background: var(--card-bg) linear-gradient(90deg, var(--accent), var(--accent-2)) no-repeat top / 100% 5px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 28px;
+  padding: 33px 28px 28px;
 }
 
 .research-card h3 {
