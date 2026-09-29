@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>[Blog Post Title] — [YOUR NAME]</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- NAVBAR — keep in sync with the other pages -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <div class="nav-name">[Your Name]</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="research.html">Research</a>
+      <a href="blog.html" class="active">Blog</a>
+    </div>
+  </div>
+</nav>
+
+<!-- =====================================================================
+     BLOG POST TEMPLATE
+     Duplicate this file per post (e.g. blog-post-isef-2025.html), edit
+     the title/date/body below, then link to it from blog.html's
+     "Read More" button.
+     ===================================================================== -->
+<div class="page-hero container" style="text-align:left; max-width:760px; margin:0 auto; padding-bottom:0;">
+  <a href="blog.html" class="btn btn-outline" style="margin-bottom:24px; display:inline-block;">&larr; Back to Blog</a>
+  <div class="eyebrow">[Category, e.g. Reflections]</div>
+  <h1 style="text-align:left;">[Blog Post Title]</h1>
+  <p style="text-align:left;">[Month Day, Year] · [X min read]</p>
+</div>
+
+<section>
+  <div class="container" style="max-width:760px;">
+
+    <!-- Replace with: <img src="assets/images/blog1.jpg" alt="[Post Title]" style="border-radius:14px; margin-bottom:32px;" /> -->
+    <div class="img-placeholder" style="aspect-ratio:16/9; margin-bottom:32px;">
+      [ADD COVER IMAGE]
+    </div>
+
+    <div style="color:var(--text-muted); font-size:1.05rem;">
+      <p>[Opening paragraph — set the scene: what happened, why you're
+         writing about it.]</p>
+
+      <p>[Body paragraph 2 — the main story, challenge, or lesson.]</p>
+
+      <p>[Body paragraph 3 — what you learned or how it changed your
+         approach going forward.]</p>
+
+      <p>[Closing paragraph — wrap up, and maybe a takeaway for the
+         reader.]</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="social-row">
+      <a href="mailto:[your.email@example.com]">Email</a>
+      <a href="https://linkedin.com/in/[your-handle]">LinkedIn</a>
+      <a href="https://github.com/[your-handle]">GitHub</a>
+    </div>
+    © <span id="year"></span> [Your Name]. All rights reserved.
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

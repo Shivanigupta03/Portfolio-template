@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>[YOUR NAME] — About Me</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- =====================================================================
+     NAVBAR — duplicated at the top of every page. If you edit this,
+     copy the same change into projects.html / research.html / blog.html
+     ===================================================================== -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <div class="nav-name">[Your Name]</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="about.html" class="active">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="research.html">Research</a>
+      <a href="blog.html">Blog</a>
+    </div>
+  </div>
+</nav>
+
+<!-- =====================================================================
+     LOGO / AFFILIATION BANNER
+     Add one .logo-chip per organization/school/award logo you want to
+     show at the top of the page. Copy a chip to add more, delete to
+     remove.
+     ===================================================================== -->
+<div class="container">
+  <div class="logo-strip">
+    <div class="logo-strip-label">Recognitions &amp; Affiliations</div>
+
+    <!-- Auto-scrolling marquee. The .logo-track below is duplicated ONCE
+         (two identical sets of chips back to back) so the loop is seamless.
+         Add/remove a chip? Make the SAME change in BOTH copies. -->
+    <div class="logo-marquee">
+      <div class="logo-track">
+        <!-- COPY BLOCK START: one logo chip -->
+        <div class="logo-chip">
+          <img src="assets/images/logo-placeholder.png" alt="[Organization name]" />
+        </div>
+        <!-- COPY BLOCK END -->
+
+        <div class="logo-chip">
+          <img src="assets/images/logo-placeholder.png" alt="[Organization name]" />
+        </div>
+
+        <div class="logo-chip">
+          <img src="assets/images/logo-placeholder.png" alt="[Organization name]" />
+        </div>
+
+        <div class="logo-chip">
+          <img src="assets/images/logo-placeholder.png" alt="[Organization name]" />
+        </div>
+
+        <!-- duplicate set — keep identical to the set above -->
+        <div class="logo-chip" aria-hidden="true">
+          <img src="assets/images/logo-placeholder.png" alt="" />
+        </div>
+
+        <div class="logo-chip" aria-hidden="true">
+          <img src="assets/images/logo-placeholder.png" alt="" />
+        </div>
+
+        <div class="logo-chip" aria-hidden="true">
+          <img src="assets/images/logo-placeholder.png" alt="" />
+        </div>
+
+        <div class="logo-chip" aria-hidden="true">
+          <img src="assets/images/logo-placeholder.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =====================================================================
+     PROFILE PHOTO + INTRO HEADLINE
+     ===================================================================== -->
+<div class="container">
+  <div class="profile-block">
+    <div class="profile-photo">
+      <!-- Replace this div's contents with:
+           <img src="assets/images/profile.jpg" alt="[Your Name]" /> -->
+      <div class="img-placeholder" style="width:100%;height:100%;">
+        [ADD PROFILE PHOTO]
+      </div>
+    </div>
+
+    <h1>Hi, I'm <span class="accent">[Your Name]</span></h1>
+
+    <p class="tagline">
+      [One or two sentences summarizing who you are, your age/grade, city,
+      and what you're passionate about — this is the line under your name
+      that gives a first impression.]
+    </p>
+  </div>
+</div>
+
+<!-- =====================================================================
+     ABOUT ME — "My Journey" text
+     ===================================================================== -->
+<section>
+  <div class="container">
+    <div class="section-title">
+      <h2>About Me</h2>
+      <p>[One-line subtitle — e.g. your school/program and what drives you.]</p>
+    </div>
+
+    <div class="journey-text">
+      <h3>My Journey</h3>
+      <p>
+        [Paragraph 1 — introduce yourself: age, location, school, and the
+        broad interests that define you (e.g. AI, engineering, art,
+        medicine). Mention the "why" behind your work.]
+      </p>
+      <p>
+        [Paragraph 2 — describe 2-3 major projects or experiences and any
+        recognition they earned, at a high level. Save the details for the
+        Projects/Research pages.]
+      </p>
+      <p>
+        [Paragraph 3 — mention interests outside academics/tech: sports,
+        music, community service, hobbies — things that round you out as
+        a person.]
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     AWARDS & HONOURS — card grid
+     Copy the whole "COPY BLOCK" to add another award.
+     ===================================================================== -->
+<section>
+  <div class="container">
+    <div class="section-title">
+      <div style="font-size:2rem;">🏆</div>
+      <h2>Awards &amp; Honours</h2>
+      <p>Recognition for excellence in academics, research, leadership, and creative pursuits</p>
+    </div>
+
+    <div class="card-grid">
+      <!-- COPY BLOCK START: one award card -->
+      <div class="card">
+        <div class="card-top-bar"></div>
+        <div class="card-body">
+          <div class="img-placeholder" style="aspect-ratio:4/3; margin-bottom:16px;">
+            [ADD AWARD PHOTO]
+          </div>
+          <div class="badge-row"><span class="badge badge-blue">[Year]</span></div>
+          <h3>🏆 [Award Name]</h3>
+          <div class="meta"><span class="badge badge-purple">[Category, e.g. Robotics &amp; Innovation]</span></div>
+          <p class="desc">[1-2 sentences describing what the award recognized and why it mattered.]</p>
+        </div>
+      </div>
+      <!-- COPY BLOCK END -->
+
+      <div class="card">
+        <div class="card-top-bar"></div>
+        <div class="card-body">
+          <div class="img-placeholder" style="aspect-ratio:4/3; margin-bottom:16px;">
+            [ADD AWARD PHOTO]
+          </div>
+          <div class="badge-row"><span class="badge badge-gold">[Year]</span></div>
+          <h3>🏆 [Award Name]</h3>
+          <div class="meta"><span class="badge badge-blue">[Category]</span></div>
+          <p class="desc">[1-2 sentences describing what the award recognized and why it mattered.]</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-top-bar"></div>
+        <div class="card-body">
+          <div class="img-placeholder" style="aspect-ratio:4/3; margin-bottom:16px;">
+            [ADD AWARD PHOTO]
+          </div>
+          <div class="badge-row"><span class="badge badge-purple">[Year]</span></div>
+          <h3>🏆 [Award Name]</h3>
+          <div class="meta"><span class="badge badge-green">[Category]</span></div>
+          <p class="desc">[1-2 sentences describing what the award recognized and why it mattered.]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     FOOTER — duplicated on every page
+     ===================================================================== -->
+<footer>
+  <div class="container">
+    <div class="social-row">
+      <a href="mailto:[your.email@example.com]">Email</a>
+      <a href="https://linkedin.com/in/[your-handle]">LinkedIn</a>
+      <a href="https://github.com/[your-handle]">GitHub</a>
+    </div>
+    © <span id="year"></span> [Your Name]. All rights reserved.
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

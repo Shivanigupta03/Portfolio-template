@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>[YOUR NAME] — Projects</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- NAVBAR — keep in sync with about.html / research.html / blog.html -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <div class="nav-name">[Your Name]</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="about.html">About Me</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="research.html">Research</a>
+      <a href="blog.html">Blog</a>
+    </div>
+  </div>
+</nav>
+
+<!-- =====================================================================
+     PROJECT GRID
+     Copy one whole "COPY BLOCK" per project. Each card holds an image,
+     tags, a short description, and links.
+     ===================================================================== -->
+<section>
+  <div class="container">
+    <div class="card-grid">
+
+      <!-- COPY BLOCK START: one project card -->
+      <div class="card project-card">
+        <div class="card-body">
+          <!-- Replace with: <img src="assets/images/project1.jpg" alt="[Project Name]" /> -->
+          <div class="img-placeholder">
+            [ADD PROJECT IMAGE]<br />
+            <small>16:9 screenshot or photo works best</small>
+          </div>
+
+          <h3 style="text-align:left; margin-top:18px;">[Project Name]</h3>
+
+          <div class="tag-row">
+            <span class="tag">[Tag, e.g. AI]</span>
+            <span class="tag">[Tag, e.g. Python]</span>
+            <span class="tag">[Tag, e.g. Hardware]</span>
+          </div>
+
+          <p class="desc" style="text-align:left;">
+            [2-3 sentences: what problem this project solves, your role,
+            and the key technology or approach you used.]
+          </p>
+
+          <div class="link-row">
+            <a href="#" class="btn btn-primary">View Project</a>
+            <a href="#" class="btn btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- COPY BLOCK END -->
+
+      <div class="card project-card">
+        <div class="card-body">
+          <div class="img-placeholder">
+            [ADD PROJECT IMAGE]<br />
+            <small>16:9 screenshot or photo works best</small>
+          </div>
+          <h3 style="text-align:left; margin-top:18px;">[Project Name]</h3>
+          <div class="tag-row">
+            <span class="tag">[Tag]</span>
+            <span class="tag">[Tag]</span>
+          </div>
+          <p class="desc" style="text-align:left;">
+            [2-3 sentences describing the project.]
+          </p>
+          <div class="link-row">
+            <a href="#" class="btn btn-primary">View Project</a>
+            <a href="#" class="btn btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <div class="card-body">
+          <div class="img-placeholder">
+            [ADD PROJECT IMAGE]<br />
+            <small>16:9 screenshot or photo works best</small>
+          </div>
+          <h3 style="text-align:left; margin-top:18px;">[Project Name]</h3>
+          <div class="tag-row">
+            <span class="tag">[Tag]</span>
+            <span class="tag">[Tag]</span>
+          </div>
+          <p class="desc" style="text-align:left;">
+            [2-3 sentences describing the project.]
+          </p>
+          <div class="link-row">
+            <a href="#" class="btn btn-primary">View Project</a>
+            <a href="#" class="btn btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="social-row">
+      <a href="mailto:[your.email@example.com]">Email</a>
+      <a href="https://linkedin.com/in/[your-handle]">LinkedIn</a>
+      <a href="https://github.com/[your-handle]">GitHub</a>
+    </div>
+    © <span id="year"></span> [Your Name]. All rights reserved.
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

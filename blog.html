@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>[YOUR NAME] — Blog</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- NAVBAR — keep in sync with about.html / projects.html / research.html -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <div class="nav-name">[Your Name]</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="research.html">Research</a>
+      <a href="blog.html" class="active">Blog</a>
+    </div>
+  </div>
+</nav>
+
+<!-- =====================================================================
+     BLOG POST LIST
+     Copy one whole "COPY BLOCK" per post. "Read More" should link to a
+     copy of blog-post-template.html renamed for that post
+     (e.g. blog-post-isef-2025.html).
+     ===================================================================== -->
+<section>
+  <div class="container">
+
+    <!-- COPY BLOCK START: one blog post preview -->
+    <div class="blog-post-card">
+      <!-- Replace with: <img src="assets/images/blog1.jpg" alt="[Post Title]" /> -->
+      <div class="img-placeholder">[ADD POST IMAGE]</div>
+      <div>
+        <div class="date">[Month Day, Year] · [X min read]</div>
+        <h3>[Blog Post Title]</h3>
+        <p class="excerpt">
+          [2-3 sentence excerpt/teaser of the post — enough to make someone
+          want to click through and read the rest.]
+        </p>
+        <a href="blog-post-template.html" class="btn btn-outline">Read More</a>
+      </div>
+    </div>
+    <!-- COPY BLOCK END -->
+
+    <div class="blog-post-card">
+      <div class="img-placeholder">[ADD POST IMAGE]</div>
+      <div>
+        <div class="date">[Month Day, Year] · [X min read]</div>
+        <h3>[Blog Post Title]</h3>
+        <p class="excerpt">
+          [2-3 sentence excerpt/teaser of the post.]
+        </p>
+        <a href="blog-post-template.html" class="btn btn-outline">Read More</a>
+      </div>
+    </div>
+
+    <div class="blog-post-card">
+      <div class="img-placeholder">[ADD POST IMAGE]</div>
+      <div>
+        <div class="date">[Month Day, Year] · [X min read]</div>
+        <h3>[Blog Post Title]</h3>
+        <p class="excerpt">
+          [2-3 sentence excerpt/teaser of the post.]
+        </p>
+        <a href="blog-post-template.html" class="btn btn-outline">Read More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="social-row">
+      <a href="mailto:[your.email@example.com]">Email</a>
+      <a href="https://linkedin.com/in/[your-handle]">LinkedIn</a>
+      <a href="https://github.com/[your-handle]">GitHub</a>
+    </div>
+    © <span id="year"></span> [Your Name]. All rights reserved.
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
